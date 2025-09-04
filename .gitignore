@@ -1,0 +1,460 @@
+# Multi-Language DDD Architecture - Comprehensive .gitignore
+
+#######################
+# General
+#######################
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#######################
+# IDE and Editors
+#######################
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+bin/
+obj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+#######################
+# .NET Core
+#######################
+implementation/dotnet/**/bin/
+implementation/dotnet/**/obj/
+implementation/dotnet/**/*.user
+implementation/dotnet/**/*.suo
+implementation/dotnet/**/TestResults/
+implementation/dotnet/**/.vs/
+implementation/dotnet/**/packages/
+implementation/dotnet/**/launchSettings.json
+
+# .NET Core build outputs
+implementation/dotnet/**/project.lock.json
+implementation/dotnet/**/project.fragment.lock.json
+implementation/dotnet/**/artifacts/
+implementation/dotnet/**/*.nuget.props
+implementation/dotnet/**/*.nuget.targets
+
+# ASP.NET Scaffolding
+implementation/dotnet/**/ScaffoldingReadMe.txt
+
+#######################
+# Java/Maven/Gradle
+#######################
+implementation/java/target/
+implementation/java/**/*.class
+implementation/java/**/*.jar
+implementation/java/**/*.war
+implementation/java/**/*.ear
+implementation/java/**/*.zip
+implementation/java/**/*.tar.gz
+implementation/java/**/*.rar
+
+# Maven
+implementation/java/.mvn/wrapper/maven-wrapper.jar
+implementation/java/**/.mvn/timing.properties
+implementation/java/**/.mvn/wrapper/maven-wrapper.properties
+
+# Gradle
+implementation/java/.gradle/
+implementation/java/build/
+implementation/java/**/gradle/wrapper/gradle-wrapper.jar
+implementation/java/**/gradle/wrapper/gradle-wrapper.properties
+
+# IntelliJ
+implementation/java/**/.idea/
+implementation/java/**/*.iws
+implementation/java/**/*.iml
+implementation/java/**/*.ipr
+
+# Eclipse
+implementation/java/.project
+implementation/java/.classpath
+implementation/java/.c9/
+implementation/java/**/*.launch
+implementation/java/.settings/
+implementation/java/.metadata
+implementation/java/.recommenders
+
+# NetBeans
+implementation/java/nbproject/private/
+implementation/java/nbbuild/
+implementation/java/dist/
+implementation/java/nbdist/
+implementation/java/.nb-gradle/
+
+#######################
+# Python
+#######################
+implementation/python/**/__pycache__/
+implementation/python/**/*.py[cod]
+implementation/python/**/*$py.class
+implementation/python/**/*.so
+implementation/python/**/*.pyo
+implementation/python/**/*.pyd
+implementation/python/**/.Python
+implementation/python/**/build/
+implementation/python/**/develop-eggs/
+implementation/python/**/dist/
+implementation/python/**/downloads/
+implementation/python/**/eggs/
+implementation/python/**/.eggs/
+implementation/python/**/lib/
+implementation/python/**/lib64/
+implementation/python/**/parts/
+implementation/python/**/sdist/
+implementation/python/**/var/
+implementation/python/**/wheels/
+implementation/python/**/*.egg-info/
+implementation/python/**/.installed.cfg
+implementation/python/**/*.egg
+
+# PyInstaller
+implementation/python/**/*.manifest
+implementation/python/**/*.spec
+
+# Virtual environments
+implementation/python/**/venv/
+implementation/python/**/env/
+implementation/python/**/ENV/
+implementation/python/**/env.bak/
+implementation/python/**/venv.bak/
+implementation/python/**/.venv/
+
+# Poetry
+implementation/python/**/poetry.lock
+
+# Pytest
+implementation/python/**/.pytest_cache/
+implementation/python/**/.coverage
+implementation/python/**/htmlcov/
+implementation/python/**/.tox/
+implementation/python/**/.nox/
+
+# mypy
+implementation/python/**/.mypy_cache/
+implementation/python/**/.dmypy.json
+implementation/python/**/dmypy.json
+
+# Pyre
+implementation/python/**/.pyre/
+
+# Celery
+implementation/python/**/celerybeat-schedule
+implementation/python/**/celerybeat.pid
+
+# Jupyter Notebook
+implementation/python/**/.ipynb_checkpoints
+
+#######################
+# Node.js/TypeScript
+#######################
+implementation/typescript/**/node_modules/
+implementation/typescript/**/.npm
+implementation/typescript/**/.eslintcache
+implementation/typescript/**/logs
+implementation/typescript/**/*.log
+implementation/typescript/**/npm-debug.log*
+implementation/typescript/**/yarn-debug.log*
+implementation/typescript/**/yarn-error.log*
+implementation/typescript/**/lerna-debug.log*
+
+# Runtime data
+implementation/typescript/**/pids
+implementation/typescript/**/*.pid
+implementation/typescript/**/*.seed
+implementation/typescript/**/*.pid.lock
+
+# Coverage
+implementation/typescript/**/coverage/
+implementation/typescript/**/.nyc_output
+
+# Grunt
+implementation/typescript/**/.grunt
+
+# Bower
+implementation/typescript/**/bower_components
+
+# node-waf
+implementation/typescript/**/.lock-wscript
+
+# Compiled binary addons
+implementation/typescript/**/build/Release
+
+# Dependency directories
+implementation/typescript/**/jspm_packages/
+
+# TypeScript
+implementation/typescript/**/dist/
+implementation/typescript/**/lib/
+implementation/typescript/**/*.tsbuildinfo
+
+# Optional npm cache directory
+implementation/typescript/**/.npm
+
+# Optional eslint cache
+implementation/typescript/**/.eslintcache
+
+# Optional REPL history
+implementation/typescript/**/.node_repl_history
+
+# Output of 'npm pack'
+implementation/typescript/**/*.tgz
+
+# Yarn
+implementation/typescript/**/.yarn-integrity
+implementation/typescript/**/.pnp.*
+implementation/typescript/**/.pnp/
+
+#######################
+# Go
+#######################
+implementation/go/**/*.exe
+implementation/go/**/*.exe~
+implementation/go/**/*.dll
+implementation/go/**/*.so
+implementation/go/**/*.dylib
+
+# Test binary, built with `go test -c`
+implementation/go/**/*.test
+
+# Output of the go coverage tool
+implementation/go/**/*.out
+
+# Dependency directories
+implementation/go/**/vendor/
+
+# Go workspace file
+implementation/go/**/go.work
+
+# Air (live reloading)
+implementation/go/**/tmp/
+
+#######################
+# Docker
+#######################
+.docker/
+docker-compose.override.yml
+docker-compose.override.yaml
+
+#######################
+# Database
+#######################
+*.db
+*.sqlite
+*.sqlite3
+
+#######################
+# Test Results and Coverage
+#######################
+test-results/
+coverage/
+TestResults/
+*.trx
+*.xml
+*.json
+
+# JaCoCo (Java)
+implementation/java/**/jacoco.xml
+implementation/java/**/jacoco.exec
+
+# Coverage.py (Python)
+implementation/python/**/.coverage
+implementation/python/**/htmlcov/
+implementation/python/**/coverage.xml
+
+# NYC (Node.js)
+implementation/typescript/**/.nyc_output/
+implementation/typescript/**/coverage/
+
+# Go coverage
+implementation/go/**/coverage.out
+
+#######################
+# Logging
+#######################
+logs/
+*.log
+*.log.*
+
+#######################
+# Environment and Configuration
+#######################
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Local settings that shouldn't be committed
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/application-local.yml
+**/application-local.yaml
+
+#######################
+# Package Management
+#######################
+# NuGet
+implementation/dotnet/**/packages/
+implementation/dotnet/**/*.nupkg
+implementation/dotnet/**/*.snupkg
+
+# npm/yarn
+implementation/typescript/**/node_modules/
+implementation/typescript/**/package-lock.json
+implementation/typescript/**/yarn.lock
+
+# Maven
+implementation/java/**/.m2/
+
+# Go modules
+implementation/go/**/go.sum
+
+#######################
+# Generated Files
+#######################
+# Auto-generated files
+**/Generated_Code/
+**/*generated*
+**/*.generated.*
+
+# OpenAPI/Swagger generated
+**/swagger.json
+**/swagger.yaml
+
+# Database migrations (if auto-generated)
+**/migrations/*.sql
+
+#######################
+# Temporary and Cache Files
+#######################
+*.cache
+*.temp
+*.tmp
+.sass-cache/
+
+#######################
+# OS Generated Files
+#######################
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+
+#######################
+# Security and Secrets
+#######################
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.secrets/
+
+# Certificate files
+*.crt
+*.cer
+
+#######################
+# Performance and Profiling
+#######################
+*.prof
+*.trace
+*.perf
+*.mem
+
+#######################
+# Backup Files
+#######################
+*.bak
+*.backup
+*.old
+*.orig
+
+#######################
+# Documentation Build
+#######################
+docs/_build/
+docs/site/
+.docusaurus/
+
+#######################
+# Project Specific
+#######################
+# Custom exclusions for this multi-language DDD project
+architecture-compliance-reports/
+performance-benchmarks/
+behavioral-equivalence-reports/
+
+# Temporary development artifacts
+dev-notes/
+scratch/
+experimental/
+
+# Local development overrides
+local-config/
+dev-overrides/
