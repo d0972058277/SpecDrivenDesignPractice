@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(tree:*)",
+      "Bash(chmod:*)",
+      "Bash(make:*)",
+      "Bash(dotnet build)",
+      "Bash(dotnet test:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet script:*)",
+      "Bash(claude-code-spec-workflow get-template-context:*)",
+      "Bash(claude-code-spec-workflow get-spec-context:*)",
+      "Bash(claude-code-spec-workflow get-content:*)",
+      "Bash(claude-code-spec-workflow generate-task-commands build-project-architecture)",
+      "Bash(dotnet restore:*)",
+      "Bash(claude-code-spec-workflow get-tasks:*)",
+      "Bash(dotnet run:*)",
+      "Bash(claude-code-spec-workflow get-steering-context:*)",
+      "mcp__ide__getDiagnostics",
+      "Read(//Users/porridg3/GitHub/SpecDrivenDesign.Application/**)",
+      "Read(//Users/porridg3/GitHub/**)",
+      "Bash(dotnet list:*)",
+      "mcp__spec-workflow__manage-tasks",
+      "mcp__spec-workflow__spec-list",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(dotnet sln add:*)",
+      "Bash(git checkout:*)",
+      "WebSearch",
+      "Bash(docker:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
